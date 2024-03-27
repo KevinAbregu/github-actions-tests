@@ -19,3 +19,10 @@ jobs:
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
         run: |
           echo $EVENT_CONTEXT
+          echo $EVENT_CONTEXT > test.txt  
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-upload-artifact
+          path: test.txt 
+
