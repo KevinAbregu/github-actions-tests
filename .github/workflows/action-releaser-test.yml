@@ -1,0 +1,23 @@
+name: Actions Releaser
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  releaser:
+    runs-on: ubuntu-latest
+    name: "New Release"
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Releaser
+        uses: google-github-actions/release-please-action@v4.1.0
+        with:
+          release-type: simple
