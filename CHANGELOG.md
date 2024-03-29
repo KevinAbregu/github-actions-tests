@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/KevinAbregu/github-actions-tests/compare/v1.0.0...v1.1.0) (2024-03-29)
+
+
+### Features
+
+* first version change ([df90af5](https://github.com/KevinAbregu/github-actions-tests/commit/df90af51cc51172be5b5a883c826e95a14a35710))
+
 ## 1.0.0 (2024-03-29)
 
 
